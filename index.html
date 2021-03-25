@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>sprint 1</title>
+</head>
+
+<body onload="initGame()">
+    <h1>Minesweeper</h1>
+    <div class="timer"></div>
+    <div class="modal"></div>
+    <button class="smiley" onclick="initGame();">😀</button>
+    <div class="difficulty">
+    <button class="Easy2" onclick="changeDifficulty(4)">Easy</button>
+    <button class="Medium" onclick="changeDifficulty(8)">Medium</button>
+    <button class="Hard" onclick="changeDifficulty(12)">Hard</button>
+    </div>
+    <div class="board"></div>
+    <script src="util.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+body {
+text-align: center;
+}
+h1{
+    font-size: 50px;
+}
+
+table {
+margin:auto;
+top: 40%;
+border:2px solid;
+border-radius: 5px;
+box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.board td{
+margin:auto;
+border:2px solid;
+height: 40px;
+width: 40px;
+background: #e7e7e7d0;
+border-radius: 3px; 
+}
+
+.board td:hover {
+background-color: rgba(142, 164, 226, 0.835);
+cursor: pointer;
+}
+
+.board td.clicked {
+background: #7777777a;
+color: currentColor;
+}
+
+.difficulty {
+display: block;
+margin-bottom: 10px;
+}
+
+.timer{
+height: 40px;
+width: 40px;
+font-size: 30px;
+}
+
+.smiley{
+text-align: center;
+height: 40px;
+width: 40px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
