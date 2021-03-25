@@ -1,19 +1,19 @@
 
-function findNeighbors(cellI, cellJ, board) {
-  var countMines = 0;
-  for (var i = cellI - 1; i <= cellI + 1; i++) {
-      if (i < 0 || i >= board.length) continue;
-      for (var j = cellJ - 1; j <= cellJ + 1; j++) {
-          if (i === cellI && j === cellJ) continue;
-          if (j < 0 || j >= board[0].length) continue;
-          if (board[i][j].isMine === true) {
-              console.log('countMines', countMines)
-              countMines++;
-          }
-      }
-  }
-  return countMines;
-}
+// function findNeighbors(cellI, cellJ, board) {
+//   var countMines = 0;
+//   for (var i = cellI - 1; i <= cellI + 1; i++) {
+//       if (i < 0 || i >= board.length) continue;
+//       for (var j = cellJ - 1; j <= cellJ + 1; j++) {
+//           if (i === cellI && j === cellJ) continue;
+//           if (j < 0 || j >= board[0].length) continue;
+//           if (board[i][j].isMine === true) {
+//               console.log('countMines', countMines)
+//               countMines++;
+//           }
+//       }
+//   }
+//   return countMines;
+// }
 // function countNeighbors(cellI, cellJ, mat) {
 //   var neighborsSum = 0;
 //   for (var i = cellI - 1; i <= cellI + 1; i++) {
@@ -69,16 +69,16 @@ function findNeighbors(cellI, cellJ, board) {
 //   }
   
 //   // copy a matrix. good if we want to keep the main matrix as is.
-  function copyMat(mat) {
-    var newMat = [];
-    for (var i = 0; i < mat.length; i++) {
-      newMat[i] = [];
-      for (var j = 0; j < mat[0].length; j++) {
-        newMat[i][j] = mat[i][j];
-      }
-    }
-    return newMat;
-  }
+  // function copyMat(mat) {
+  //   var newMat = [];
+  //   for (var i = 0; i < mat.length; i++) {
+  //     newMat[i] = [];
+  //     for (var j = 0; j < mat[0].length; j++) {
+  //       newMat[i][j] = mat[i][j];
+  //     }
+  //   }
+  //   return newMat;
+  // }
   
   
 //   function playSound() {

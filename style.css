@@ -1,8 +1,11 @@
 body {
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 text-align: center;
+background: radial-gradient(circle, rgba(33, 25, 109, 0.534), rgba(111, 69, 167, 0.657), rgba(64, 21, 144, 0.74));
 }
-h1{
-    font-size: 50px;
+
+h1 {
+font-size: 50px;
 }
 
 table {
@@ -11,11 +14,10 @@ top: 40%;
 border:2px solid;
 border-radius: 5px;
 box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
-
 }
 
-
 .board td{
+font-size: 22px;
 margin:auto;
 border:2px solid;
 height: 40px;
@@ -30,25 +32,47 @@ cursor: pointer;
 }
 
 .board td.clicked {
-background: #7777777a;
-color: currentColor;
+    background: #7777777a;
+    color: currentColor;
 }
 
 .difficulty {
-display: block;
-margin-bottom: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.difficulty button{
+font-size: 22px;
+margin:auto;
+border:2px solid;
+height: 40px;
+width: 100px;
+border-radius: 5px;
+text-align: center;
+cursor: pointer;
 }
 
 .timer{
-height: 40px;
-width: 40px;
+display: block;
 font-size: 30px;
+margin-bottom: 10px;
+
 }
 
 .smiley{
 text-align: center;
 height: 40px;
-width: 40px;
-margin-top: 10px;
+width: 50px;
+margin-top: 20px;
 margin-bottom: 10px;
+font-size: 22px;
+border:2px solid;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.game-over {
+display: block;
+font-size: 35px;
+margin-top: 20px;
 }
