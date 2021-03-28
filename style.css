@@ -5,7 +5,8 @@ background: radial-gradient(circle, rgba(33, 25, 109, 0.534), rgba(111, 69, 167,
 }
 
 h1 {
-font-size: 50px;
+font-size: 30px;
+color: white;
 }
 
 table {
@@ -20,8 +21,8 @@ box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
 font-size: 22px;
 margin:auto;
 border:2px solid;
-height: 40px;
-width: 40px;
+height: 35px;
+width: 35px;
 background: #e7e7e7d0;
 border-radius: 3px; 
 }
@@ -32,38 +33,66 @@ cursor: pointer;
 }
 
 .board td.clicked {
-    background: #7777777a;
-    color: currentColor;
+background: #7777777a;
+}
+
+.sidenav {
+height: 100%;
+width: 250px;
+position: fixed;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.602);
+overflow-x: hidden;
+padding-top: 20px;
+}
+
+.sidenav a, .info, .score{
+padding: 6px 8px 6px 16px;
+text-decoration: none;
+font-size:22px;
+color: #d1cece;
+display: block;
+border: none;
+background: none;
+width:100%;
+text-align: left;
+outline: none;
+}
+
+a:hover {
+background-color: rgba(65, 61, 71, 0.507);
+}
+
+.hints, .safe-cell {
+cursor: pointer;
+}
+
+.sidenav a.light{
+    text-shadow: 0 0 30px #eea812;
 }
 
 .difficulty {
-    display: block;
-    margin-bottom: 10px;
+display: block;
+margin-bottom: 10px;
 }
 
 .difficulty button{
 font-size: 22px;
 margin:auto;
 border:2px solid;
-height: 40px;
+height: 35px;
 width: 100px;
 border-radius: 5px;
 text-align: center;
 cursor: pointer;
 }
 
-.timer{
-display: block;
-font-size: 30px;
-margin-bottom: 10px;
-
-}
-
 .smiley{
 text-align: center;
 height: 40px;
 width: 50px;
-margin-top: 20px;
+margin-top: 10px;
 margin-bottom: 10px;
 font-size: 22px;
 border:2px solid;
@@ -76,3 +105,7 @@ display: block;
 font-size: 35px;
 margin-top: 20px;
 }
+.board td.bright {
+background-color:rgba(13, 241, 13, 0.349)
+}
+    

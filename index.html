@@ -10,9 +10,19 @@
 </head>
 
 <body onload="initGame()">
-    <h1>Minesweeper</h1>
-    <div class="timer">Timer 0:0</div>
-    <div class="modal"></div>
+    <div class="sidenav">
+        <h1>Minesweeper</h1>
+         <div class="info">
+          <a class="lives">Lives: ❤️ ❤️ ❤️ </a>
+          <a class="hints" onclick="showHints()">Hints: 💡 💡 💡</a>
+          <a class="safe-cell" onclick="safeClick()">Safe Click : 3</a>   
+          <div class="score">Best Score:</div>
+          <a class="score-easy">Easy:</a>
+          <a class="score-medium">Medium:</a>
+          <a class="score-hard">Hard:</a>
+          <a class="timer">Timer 0:0</a>
+        </div>
+      </div>
     <button class="smiley" onclick="restart();">😀</button>
     <div class="difficulty">
     <button class="Easy" onclick="changeDifficulty(4)">Easy</button>
@@ -21,7 +31,6 @@
     </div>
     <div class="board"></div>
     <div class="game-over"></div>
-    <script src="util.js"></script>
     <script src="app.js"></script>
 </body>
 
